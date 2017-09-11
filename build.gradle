@@ -1,0 +1,26 @@
+group 'uso'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+def digdagVersion = '0.9.16'
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven {
+        url 'https://dl.bintray.com/digdag/maven'
+    }
+}
+
+configurations {
+    provided
+}
+
+dependencies {
+    compile 'io.digdag:digdag-spi:' + digdagVersion
+    compile 'io.digdag:digdag-plugin-utils:' + digdagVersion
+    compile group: 'com.amazonaws', name: 'aws-java-sdk-ecs', version: '1.11.192'
+}
