@@ -21,7 +21,7 @@ configurations {
 }
 
 dependencies {
-    compile 'io.digdag:digdag-spi:' + digdagVersion
-    compile 'io.digdag:digdag-plugin-utils:' + digdagVersion
+    provided 'io.digdag:digdag-spi:' + digdagVersion
+    provided 'io.digdag:digdag-plugin-utils:' + digdagVersion
     compile group: 'com.amazonaws', name: 'aws-java-sdk-ecs', version: '1.11.192'
 }
