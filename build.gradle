@@ -12,7 +12,7 @@ repositories {
     mavenCentral()
     jcenter()
     maven {
-        url "https://jitpack.io"
+        url 'https://dl.bintray.com/digdag/maven'
     }
 }
 
